@@ -6,11 +6,20 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Hello World!" />
+        <Button
+            android:id="@+id/buttonInsert"
+            android:text="Enter"
+            android:layout_width="150dp"
+            android:layout_height="100dp"/>
 
+        <EditText
+            android:id="@+id/textInsert"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:text="Escriba aqui su texto"/>
+    </GridLayout>
 </RelativeLayout>
