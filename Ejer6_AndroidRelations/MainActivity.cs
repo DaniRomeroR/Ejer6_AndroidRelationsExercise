@@ -14,8 +14,6 @@ namespace Ejer6_AndroidRelations
     public class MainActivity : AppCompatActivity
     {
 
-        private Button _button1;
-        private EditText _editText1;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -30,10 +28,6 @@ namespace Ejer6_AndroidRelations
         }
         private void AddBindForLayout()
         {
-           /* _button1 = FindViewById<Button>(Resource.Id.buttonInsert);
-            _editText1 = FindViewById<EditText>(Resource.Id.textInsert);*/
-
-            _button1.Click += pruebecita;
         }
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
@@ -41,13 +35,6 @@ namespace Ejer6_AndroidRelations
             return true;
         }
 
-        private void pruebecita(object sender, EventArgs e)
-        {
-            AlertDialog.Builder ventanaEmergente = new AlertDialog.Builder(this);
-            ventanaEmergente.SetTitle("Ejercicio 1");
-            ventanaEmergente.SetMessage(_editText1.Text.ToString());
-            ventanaEmergente.Show();
-        }
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             int id = item.ItemId;
