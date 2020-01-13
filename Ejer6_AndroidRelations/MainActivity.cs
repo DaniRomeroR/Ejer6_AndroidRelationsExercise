@@ -30,8 +30,8 @@ namespace Ejer6_AndroidRelations
         }
         private void AddBindForLayout()
         {
-            _button1 = FindViewById<Button>(Resource.Id.buttonInsert);
-            _editText1 = FindViewById<EditText>(Resource.Id.textInsert);
+           /* _button1 = FindViewById<Button>(Resource.Id.buttonInsert);
+            _editText1 = FindViewById<EditText>(Resource.Id.textInsert);*/
 
             _button1.Click += pruebecita;
         }
